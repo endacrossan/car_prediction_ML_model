@@ -9,7 +9,7 @@ import pandas as pd # needed - conda install openpyxl, this then threw: Inconsis
 
 import sklearn # conda install scikit-learn
 import pickle
-#import plotly.express as px # conda install -c plotly plotly_express==0.4.0
+import plotly.express as px # conda install -c plotly plotly_express==0.4.0
 from PIL import Image
 #st.write("App developed using streamlit...")
 #st.write("App developed using streamlit...")
