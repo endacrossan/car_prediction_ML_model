@@ -4,3 +4,4 @@ streamlit
 pandas-datareader
 plotly.express
 scikit-learn
+openpyxl
