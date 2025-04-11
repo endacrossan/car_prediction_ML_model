@@ -77,23 +77,23 @@ with left_col:
     final_fi_sorted = final_fi.sort_values(by='Feature Importance Score', ascending=True)
     
     # Create interactive bar chart with Plotly
-    #fig = px.bar(
-     #   final_fi_sorted,
-      #  x='Feature Importance Score',
-     #   y='Variable',
-     #   orientation='h',
-     #   title="Feature Importance",
-    #    labels={'Feature Importance Score': 'Importance', 'Variable': 'Feature'},
-    #    text='Feature Importance Score',
-    #    color_discrete_sequence=['#48a3b4']  # Custom bar color
-  #  )
- #   fig.update_layout(
-#        xaxis_title="Feature Importance Score",
-#        yaxis_title="Variable",
-#        template="plotly_white",
-#        height=500
- #   )
-#    st.plotly_chart(fig, use_container_width=True)
+    fig = px.bar(
+    final_fi_sorted,
+        x='Feature Importance Score',
+        y='Variable',
+        orientation='h',
+       title="Feature Importance",
+        labels={'Feature Importance Score': 'Importance', 'Variable': 'Feature'},
+        text='Feature Importance Score',
+        color_discrete_sequence=['#48a3b4']  # Custom bar color
+    )
+    fig.update_layout(
+        xaxis_title="Feature Importance Score",
+        yaxis_title="Variable",
+        template="plotly_white",
+        height=500
+    )
+    st.plotly_chart(fig, use_container_width=True)
 
     # Right column: Prediction Interface
 with right_col:
