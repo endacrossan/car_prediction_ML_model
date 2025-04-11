@@ -7,7 +7,7 @@ import pandas as pd # needed - conda install openpyxl, this then threw: Inconsis
 # 1.2.1 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
 # https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
 
-import sklearn # conda install scikit-learn
+# import sklearn # conda install scikit-learn
 import pickle
 import plotly.express as px # conda install -c plotly plotly_express==0.4.0
 from PIL import Image
