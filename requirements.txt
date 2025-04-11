@@ -3,4 +3,5 @@ plotly.express
 streamlit
 pandas-datareader
 pickle
-sklearn
+plotly.express
+scikit-learn
